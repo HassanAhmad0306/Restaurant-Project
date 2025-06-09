@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar container">
+        <div class="logo">
+          <a href="">NiceRestaurant</a>
+        </div>
+        <ul class="ul-items-container">
+          <li><a href="#">Home</a></li>
+          <li><a href="#culinary">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#book-table">Book a Table</a></li>
+          <li><a href="#">Chefs</a></li>
+          <li><a href="#">Events</a></li>
+          <li class="dropdown-container">
+            <!-- <label for="">Dropdown</label> -->
+            <select name="" id="">
+              <!-- <option value="">Dropdown 1</option>
+                        <Select>
+                            <option value="">Deep Dropdown 1</option>
+                            <option value="">Deep Dropdown 2</option>
+                            <option value="">Deep Dropdown 3</option>
+                            <option value="">Deep Dropdown 4</option>
+                            <option value="">Deep Dropdown 5</option>
+                        </Select> -->
+              <option value="">Dropdown 1</option>
+              <option value="">Dropdown 2</option>
+              <option value="">Dropdown 3</option>
+              <option value="">Dropdown 4</option>
+            </select>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="book-btn"><a href="#">Book a Table</a></div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container-fluid">
+          <div class="row hero-section-row justify-content-end">
+            <div class="col-lg-6 custom-container col-md-12">
+              <span class="reservation-tag">RESERVATION OPEN</span>
+              <div class="row hero-text-area">
+                <p class="savour-heading">
+                  Savour the <br />
+                  Moment,One <br />
+                  Bite at a Time
+                </p>
+                <p class="discover-para">
+                  Discover a journey of flavors at our exquisite restaurant.
+                  Immerse yourself in a delightful dining experience crafted
+                  with passion and precision.
+                </p>
+                <span class="open-span"
+                  ><i class="fa-solid fa-clock"></i> Open Daily: 11am -
+                  10pm</span
+                >
+                <div class="col-lg-12">
+                  <div
+                    class="row my-4 justify-content-between"
+                    style="gap: 20px"
+                  >
+                    <a href="#" class="book-btn1 col-lg-5">BOOK A TABLE</a>
+                    <a href="#" class="explore-btn col-lg-6"
+                      >EXPLORE OUR MENU</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 carousel-container">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active">
+                    <img
+                      src="imges/misc-square-2.webp"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imges/misc-square-1.webp"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imges/misc-square-3.webp"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="culinary" class="culinary-section">
+        <div class="container culinary-conatiner">
+          <div class="row culinary-row">
+            <h2 class="culinary-heading col-lg-12">Our Culinary Journey</h2>
+            <div class="col-lg-6 culinary-text-conatiner">
+              <p class="p1">
+                <i
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.</i
+                >
+              </p>
+              <p class="p2">
+                Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+                risustristique pos uere. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus.
+              </p>
+              <div class="cooking-container">
+                <img src="" alt="" />
+                <div class="cooking-text-area">
+                  <p>
+                    "Cooking is a language through which all the following
+                    properties may be expressed: harmony, creativity, happiness,
+                    beauty, poetry, complexity, magic, humor, provocation and
+                    culture."
+                  </p>
+                  <h6>Executive Chef</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 culinary-img-container">
+              <div class="est-container">
+                <p class="est">
+                  Est. <br />
+                  <span>2005</span>
+                </p>
+              </div>
+              <div class="showcase-img1">
+                <img src="imges/showcase-4.webp" alt="" />
+              </div>
+              <div class="showcase-img2 d-sm-none d-lg-block">
+                <img src="imges/showcase-2.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row features-container">
+            <div class="feature col-lg-3 col-md-6">
+              <p class="feature-icon"><i class="bi bi-award"></i></p>
+              <h3 class="feature-heading">Award Winning</h3>
+              <p class="para1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.Suspendisse varius enim in eros.
+              </p>
+            </div>
+            <div class="feature col-lg-3 col-md-6">
+              <p class="feature-icon"><i class="bi bi-egg-fried"></i></p>
+              <h3 class="feature-heading">Fresh Ingredients</h3>
+              <p class="para1">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla.
+              </p>
+            </div>
+            <div class="feature col-lg-3 col-md-6" style="margin-top: -12px">
+              <p class="feature-icon"><i class="bi bi-people"></i></p>
+              <h3 class="feature-heading">Expert Team</h3>
+              <p class="para1">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit.
+              </p>
+            </div>
+            <div class="feature col-lg-3 col-md-6">
+              <p class="feature-icon"><i class="bi bi-people"></i></p>
+              <h3 class="feature-heading">Cooked with Love</h3>
+              <p class="para1">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row stats-row">
+            <div class="col-md-3 stats-container col-sm-6">
+              <h1 class="stat-title"><span>15</span>+</h1>
+              <p class="stat-description">Years Experience</p>
+            </div>
+            <div class="col-md-3 stats-container col-sm-6">
+              <h1 class="stat-title"><span>5</span></h1>
+              <p class="stat-description">Expert Chefs</p>
+            </div>
+            <div class="col-md-3 stats-container col-sm-6">
+              <h1 class="stat-title"><span>3</span></h1>
+              <p class="stat-description">Culinary Awards</p>
+            </div>
+            <div class="col-md-3 stats-container col-sm-6">
+              <h1 class="stat-title"><span>15000</span>+</h1>
+              <p class="stat-description">Happy Customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="book-table">
+        <form action="">
+          <div class="container book-table-container">
+            <div class="row book-table-row justify-content-center">
+              <div class="col-lg-12 text-center">
+                <h1><strong>Book a Table</strong></h1>
+                <p>Please fill the form below to make a reservation</p>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div class="col-lg-4 mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter email address"
+                />
+              </div>
+              <div class="col-lg-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Phone Number"
+                />
+              </div>
+              <div class="col-lg-4 mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Number of Guests"
+                />
+              </div>
+              <div class="col-lg-4 mb-3">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                />
+              </div>
+              <div class="col-lg-4 mb-3">
+                <input
+                  type="time"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                />
+              </div>
+              <div class="col-lg-12 mb-3">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Special Requests(Optional)"
+                ></textarea>
+              </div>
+              <div
+                class="book-btn col-lg-12"
+                style="
+                  width: 140px;
+                  text-align: center;
+                  padding: 15px 20px;
+                  border-radius: 30px;
+                "
+              >
+                <a href="#">Book a Table</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h1 class="contact-heading">Contact</h1>
+              <p
+                style="
+                  font-size: 20px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: rgb(212, 205, 205);
+                "
+              >
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit
+              </p>
+            </div>
+          </div>
+          <div class=".row contact-container">
+            <div class="col-lg-4 col-md-6 contact-item-container">
+              <div class="contact-item w-100">
+                <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                <div class="contact-text-area">
+                  <h4><strong>Our Address</strong></h4>
+                  <p>1842 Maple Avenue, Portland,</p>
+                  <p>Oregon 97204</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 contact-item-container">
+              <div class="contact-item w-100">
+                <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                <div class="contact-text-area">
+                  <h4><strong>Email Address</strong></h4>
+                  <p class="para2"><strong>Phone: </strong>+92 3023876550</p>
+                  <p class="para3">
+                    <strong>Email: </strong>hassali0306@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 contact-item-container p-0">
+              <div class="contact-item w-100">
+                <div class="contact-icon"><i class="bi bi-headset"></i></div>
+                <div class="contact-text-area">
+                  <h4><strong>Hours of Operation</strong></h4>
+                  <p>Sunday-Fri: 9 AM - 6 PM</p>
+                  <p>Saturday: 9 AM - 4 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="get-in-touch">
+        <form action="">
+          <div class="container book-table-container">
+            <div class="row book-table-row justify-content-center">
+              <div class="col-lg-12 text-center">
+                <h1><strong>Get in Touch</strong></h1>
+                <p>Please fill the form below to make a reservation</p>
+              </div>
+              <div class="col-lg-6 mb-3 get-in-touch-div">
+                <i class="bi bi-person"></i>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter First Name"
+                />
+              </div>
+              <div class="col-lg-6 mb-3 get-in-touch-div">
+                <i class="bi bi-envelope"></i>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter email address"
+                />
+              </div>
+              <div class="col-lg-12 mb-3 get-in-touch-div">
+                <i class="bi bi-text-left"></i>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="col-lg-12 mb-3 get-in-touch-div">
+                <i class="bi bi-chat-dots"></i>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Write Message..."
+                ></textarea>
+              </div>
+              <div
+                class="book-btn col-lg-12"
+                style="
+                  width: 200px;
+                  text-align: center;
+                  padding: 18px 20px;
+                  border-radius: 10px;
+                  margin: 20px 0px;
+                "
+              >
+                <a href="#"><strong>SEND MESSAGE</strong></a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div
+        class="container"
+        style="
+          border-top: 1px solid rgb(72, 58, 58);
+          padding-top: 30px;
+          margin-top: 100px;
+        "
+      >
+        <div class="row footer-row">
+          <div class="col-lg-5 footer-item1">
+            <h1 sclass="footer-heading" style="font-weight: bold">
+              <a class="text-white" href="index.html">Nice Restaurant</a>
+            </h1>
+            <p class="para">
+              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+              nada terra videa magna derita valies darta donna mare fermentum
+              iaculis eu non diam phasellus.
+            </p>
+            <div class="social-links mb-5">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 footer-item2">
+            <h3 class="footer-title">Useful Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#culinary">About us</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Term of Services</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-6 footer-item2">
+            <h3 class="footer-title">Our Services</h3>
+            <ul>
+              <li><a href="">Web Design</a></li>
+              <li><a href="">Web Development</a></li>
+              <li><a href="">Product Management</a></li>
+              <li><a href="">Marketing</a></li>
+              <li><a href="">Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 footer-item3">
+            <h3 class="footer-title">Contact Us</h3>
+            <p class="para1">
+              A108 Adam Street <br />New York, NY 535022 <br />United States
+            </p>
+            <p class="para2"><strong>Phone: </strong>+92 3023876550</p>
+            <p class="para3"><strong>Email: </strong>hassali0306@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-content-container">
+        <div class="footer-content">
+          <p class="copyright-container">
+            © Copyright <strong>NiceRestaurant</strong> All Rights Reserved
+          </p>
+          <p class="design-para">
+            Designed by <strong class="">Hassan Ahmad</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
